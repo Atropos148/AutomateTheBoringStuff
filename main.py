@@ -1,24 +1,16 @@
-spam = ['apples', 'bananas', 'tofu', 'cats']
-hugeList = ['car','house','cat','furry','bet','sack','high','like','Mike']
-print('Lists:')
-print('1.spam' + ' ' + '2.hugeList')
+birthdays = {'Alice':'1. Apr', 'Bob':'12. Dec', 'Carol':'4. Mar'}
+
 while True:
-    print('What list do you want?')
-    choice = input()
-    if choice == '1':
-        list = spam
+    print('Enter a name: (blank to quit)')
+    name = input()
+    if name == '':
         break
-    elif choice == '2':
-        list = hugeList
-        break
+
+    if name in birthdays:
+        print(birthdays[name] + ' is the birthday of ' + name)
     else:
-        print('Bad input')
-
-
-for i in range(len(list)):
-    if i == (len(list)-1):
-        print(list[i],end='')
-    elif i == (len(list)-2):
-        print(list[i],end=' and ')
-    elif i < len(list):
-        print(list[i],end=', ')
+        print('I do not have birthday information for ' + name)
+        print('What is their birthday?')
+        bday = input()
+        birthdays[name] = bday
+        print('Birthday database updated')
