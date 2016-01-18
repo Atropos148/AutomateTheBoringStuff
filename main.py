@@ -1,4 +1,8 @@
-birthdays = {'Alice':'1. Apr', 'Bob':'12. Dec', 'Carol':'4. Mar'}
+# firstline
+birthdays = {'Alice': '1. Apr', 'Bob': '12. Dec', 'Carol': '4. Mar'}
+
+if 'Alice' in birthdays:
+    print('True')
 
 while True:
     print('Enter a name: (blank to quit)')
