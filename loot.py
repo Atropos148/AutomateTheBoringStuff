@@ -20,6 +20,7 @@ def addToInventory(bag, addedItems):
     for x in range(len(dragonLoot)):
         addedItems.append(dragonLoot[x])
         x += 1
+        
     for x in range(len(addedItems)):
         if addedItems[x] not in bag:
             bag.setdefault(addedItems[x],1)
