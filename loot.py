@@ -20,15 +20,16 @@ def addToInventory(bag, addedItems):
     for x in range(len(dragonLoot)):
         addedItems.append(dragonLoot[x])
         x += 1
-        
+
     for x in range(len(addedItems)):
         if addedItems[x] not in bag:
-            bag.setdefault(addedItems[x],1)
+            bag.setdefault(addedItems[x], 1)
         elif addedItems[x] in bag:
             bag[addedItems[x]] += 1
 
     return bag
 
-#BODY
+
+# BODY
 bag = addToInventory(bag, dragonLoot)
 displayInventory(bag)
