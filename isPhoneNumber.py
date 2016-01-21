@@ -1,6 +1,8 @@
 #! python3
 # isPhoneNumber.py
 
+import re
+
 def isPhoneNumber(text):
     if len(text) !=12:
         return False
@@ -27,3 +29,11 @@ for i in range(len(message)):
         print('Phone number found:' + chunk)
 
 print('Done')
+
+batRegex = re.compile(r'Bat(wo)?man')
+mo1 = batRegex.search('The Adventures of Batman')
+mo1.group()
+
+vowelRegex = re.compile(r'[aeiouAEIOU]')
+vowelRegex.findall('Robocop eats baby food. BABY FOOD.')
+#['o', 'o', 'o', 'e', 'a', 'a', 'o', 'o', 'A', 'O', 'O']
