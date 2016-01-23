@@ -16,15 +16,16 @@ if not os.path.exists(pathLorem):
 
 lorem = open(pathLorem).read().replace("\n", '').split()
 
-print('exit to exit')
+print('how many folders you want(1000 = 200Mb)')
+ans = int(input())
 
-while True:
+for con in range(ans):
     path = ('.\\txtMurder\\Murder%s' % folder)
-    pathFile =  path + ('.\\txtMurder%s.txt' % i)
+    pathFile = path + ('.\\txtMurder%s.txt' % i)
     if not os.path.exists(path):
         os.makedirs(path)
 
-    if os.path.isfile(pathFile):
+    elif os.path.isfile(pathFile):
         i += 1
     else:
         txtMurderFile = open(pathFile, 'w')
