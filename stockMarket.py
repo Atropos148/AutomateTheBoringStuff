@@ -1,9 +1,6 @@
 #! python3
 # stockMarket.py
 
-
-import django
-
 buyPrice = 20.0
 sellPrice = 0.0
 b = 0
