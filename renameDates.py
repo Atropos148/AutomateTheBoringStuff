@@ -1,5 +1,8 @@
 #! python3
 # renameDates.py - change US dates to EU dates
+# alternative uses: adding prefix to filename
+# Eu dates to Us dates, Remove zeros like from spam0042.txt
+
 
 import re, os, shutil
 
