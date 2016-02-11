@@ -15,7 +15,8 @@ elif len(sys.argv) == 3 and sys.argv[1].lower() == 'delete':
         del mcbShelf[sys.argv[2]]
 elif len(sys.argv) == 2:
     if sys.argv[1].lower() == 'list':
-        pyperclip.copy(str(list(mcbShelf.keys())))
+        # pyperclip.copy(str(list(mcbShelf.keys())))
+        print(str(list(mcbShelf.keys())))
     if sys.argv[1].lower() == 'delete':
         for keys in mcbShelf:
             del mcbShelf[keys]
