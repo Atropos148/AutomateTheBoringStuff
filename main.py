@@ -1,4 +1,4 @@
-# firstline
+
 birthdays = {'Alice': '1. Apr', 'Bob': '12. Dec', 'Carol': '4. Mar'}
 
 if 'Alice' in birthdays:
