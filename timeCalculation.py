@@ -1,4 +1,5 @@
 #! python3
+# timeCalculation.py - simple time tester
 
 import time
 
@@ -12,5 +13,5 @@ def calcProd():
 startTime = time.time()
 prod = calcProd()
 endTime = time.time()
-print('The result is %s digits long.'% (len(str(prod))))
+print('The result is %s digits long.' % (len(str(prod))))
 print('Took %s seconds to calculate.' % (endTime - startTime))
