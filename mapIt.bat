@@ -1,1 +1,1 @@
-@py.exe C:\bitbucket\python3training\mapIt.py %*
+@py.exe D:\bitbucket\python-3-training\mapIt.py %*
